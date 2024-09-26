@@ -10,7 +10,7 @@
     "build": "CI=false npm run build"
   },
   "engines": {
-  "node": ">=14.x"
+    "node": ">=14.x"
   }
   "keywords": [],
   "author": "",
