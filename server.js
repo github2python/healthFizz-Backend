@@ -7,7 +7,7 @@ require("dotenv").config();
 const app = express();
 app.use(
   cors({
-    origin: "https://healthfizz-backend.onrender.com",
+    origin: "https://main--health-fizz.netlify.app",
   })
 );
 app.use(bodyParser.json());
