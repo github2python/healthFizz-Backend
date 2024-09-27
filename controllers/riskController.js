@@ -5,7 +5,7 @@ exports.heartRisk = async (req, res) => {
   try {
     // console.log(req.body);
     const response = await axios.post(
-      "http://localhost:5000/predict/heart",
+      "https://healthfizz-backend-flask.onrender.com/predict/heart",
       req.body
     );
     // console.log(response);
@@ -45,7 +45,7 @@ exports.heartRisk = async (req, res) => {
 exports.diabetesRisk = async (req, res) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/predict/diabetes",
+      "https://healthfizz-backend-flask.onrender.com/predict/diabetes",
       req.body
     );
     const { email } = req.params;
@@ -80,7 +80,7 @@ exports.diabetesRisk = async (req, res) => {
 exports.strokeRisk = async (req, res) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/predict/stroke",
+      "https://healthfizz-backend-flask.onrender.com/predict/stroke",
       req.body
     );
     const { email } = req.params;
@@ -113,7 +113,7 @@ exports.strokeRisk = async (req, res) => {
 exports.liverRisk = async (req, res) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/predict/liver",
+      "https://healthfizz-backend-flask.onrender.com/predict/liver",
       req.body
     );
     const { email } = req.params;
